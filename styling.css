@@ -1,15 +1,104 @@
-body {
-    margin: 0;
-    padding: 0;
+* {
+    box-sizing: border-box;
 }
 
 
-h1 {
-    color: blue;
-    background-color: orange;
-    text-align: center;
-    padding: 10px 0px;
-    border-radius: 10px;
-    border: 3px dotted rgb(146, 164, 202);
+html {
+      overflow: hidden;
+    }
+
+body {
     margin: 0;
+    padding: 0;
+    background-color: #EAEDED;
+    background-image: url("Images/53949426179_1e3cd55d2b_o.png");
+    background-size: contain;
+    background-attachment: fixed;
+
+}
+
+.header {
+    color: white;
+    background-color: #db6363;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+    position: sticky;
+    top: 0;
+}
+
+.header h1 {
+    border-bottom: 2px solid white;
+    margin: 0;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: start;
+    justify-content: space-around;
+    justify-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.content img {
+    position: relative;
+    margin: 0 10px;
+    border: 1px solid black;
+    border-width: thick;
+
+}
+
+.summary {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 15px;
+    vertical-align: middle;
+    color: black;
+    font-weight: bold;
+    background-color: #e8e8e8;;
+}
+
+footer {
+    position: fixed;
+    height: 12%;
+    min-height: 80px;
+    width: 100%;
+    bottom: 0px;
+    color: white;
+    background-color: #db6363;
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+footer p{
+    margin: 0;
+}
+footer img {
+    max-height: 30%;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: scroll;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.resume {
+    color: black;
 }

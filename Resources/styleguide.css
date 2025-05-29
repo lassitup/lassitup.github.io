@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+
+header h1 {
+    font-weight: bold;
+    font-family: Zain;
+}
+
+.section {
+  border: 2px solid black;
+  margin: 0 20px;
+}
+
+.color_row {
+  height: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;  
+  
+}
+
+.font_row {
+  height: 50%;
+  text-align: center;
+}
+
+.section_title {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.color {
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+    border: 2px solid black;
+    clear: both;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+.color.color1 {
+  background-color: #10ADF1;
+  margin-right: 10px;
+}
+
+.color.color2 {
+  background-color: #F0FFFF;
+}
+
+.color.color3 {
+  background-color: yellow;
+  margin-left: 10px;;
+}
+
+.color.color4 {
+  background-color: #12a7e3;
+  margin-right: 10px;
+}
+
+.color.color5 {
+  background-color: pink;
+}
+
+.color.color6 {
+  background-color: teal;
+  margin-left: 10px;;
+}
+
+.color p {
+    text-align: center;
+    margin: 0;
+    padding-top: 2em;
+}
+
+.color.color1 p {
+    color:white;
+}
+
+.color.color2 p {
+    color:white;    
+}
+
+.color.color3 p {
+    color: black;
+}
+
+#font1{
+    font-family: zain;
+}
