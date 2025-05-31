@@ -2,12 +2,25 @@
     box-sizing: border-box;
 }
 
-
 html {
-      overflow: hidden;
-    }
+    height: 100%;
+}
 
 body {
+    min-height: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "header header"
+                         "intro intro"
+                         "chistory chistory"
+                         "education education"
+                         "footer footer";
+                        
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto repeat(3, 1fr) auto;
+    align-content: start;
+    justify-content: space-around;
+    justify-items: center;
     margin: 0;
     padding: 0;
     background-color: #EAEDED;
@@ -17,74 +30,27 @@ body {
 
 }
 
+/* Row 1 */
 .header {
+    grid-area: header;
     color: white;
     background-color: #db6363;
     text-align: center;
     margin: 0;
     width: 100%;
     font-family: "Fugaz One", sans-serif;
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     font-size: 1.3rem;
-    position: sticky;
     top: 0;
+    border-bottom: 5px solid #b9b7b6;
 }
 
 .header h1 {
     border-bottom: 2px solid white;
     margin: 0;
 }
-.content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-content: start;
-    justify-content: space-around;
-    justify-items: center;
-    margin-right: 10px;
-    margin-left: 10px;
-}
 
-.content img {
-    position: relative;
-    margin: 0 10px;
-    border: 1px solid black;
-    border-width: thick;
-
-}
-
-.summary {
-    position: relative;
-    border: 1px solid black;
-    border-radius: 15px;
-    vertical-align: middle;
-    color: black;
-    font-weight: bold;
-    background-color: #e8e8e8;;
-}
-
-footer {
-    position: fixed;
-    height: 12%;
-    min-height: 80px;
-    width: 100%;
-    bottom: 0px;
-    color: white;
-    background-color: #db6363;
-    font-family: "Fugaz One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.3rem;
-    text-align: center;
-}
-
-footer p{
-    margin: 0;
-}
-footer img {
-    max-height: 30%;
-    width: auto;
-}
 
 .menu {
     display: flex;
@@ -99,6 +65,177 @@ a {
     color: white;
 }
 
-.resume {
-    color: black;
+/* Row 2 */
+.intro {
+    grid-area: intro;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    margin: 2%;
 }
+
+
+.prof_picture {
+    border: 1px solid black;
+    border-width: thick;
+    flex-grow: 1;
+    max-width: 30rem;
+    height: auto;
+    border-radius: 100px;
+}
+
+/*Container outline for each section on the page*/
+.grid_box {
+    vertical-align: middle;
+    width: 75%;
+    min-width: 400px;
+    border: .5rem solid #db6363;
+    background-color: #b9b7b6;
+    flex-grow: 1;
+    flex-basis: 350px;
+}
+
+
+.summary {
+    vertical-align: middle;
+    align-self: center;
+    color: white;
+    font-weight: bold;
+    flex-grow: 1;
+    max-width: 50%;
+}
+
+.summary h2 {
+    font-size: 2rem;
+}
+
+.summary p {
+    text-align: center;
+    color: white;
+    font-size: 1.75rem;
+}
+
+
+
+/* Row 3 */
+.chistory {
+    grid-area: chistory;
+    vertical-align: middle;
+    align-self: center;
+    justify-self: start;
+    color: white;
+    font-weight: bold;
+
+
+}
+
+.chistory p {
+    width: 100%;
+}
+
+/* Row 4 */
+.education {
+    grid-area: education;
+    vertical-align: middle;
+    align-self: center;
+    justify-self: end;
+    color: white;
+    font-weight: bold;
+}
+
+/* Row 5 */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: footer;
+    height: 12%;
+    min-height: 80px;
+    width: 100%;
+    bottom: 0px;
+    color: white;
+    background-color: #db6363;
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1rem;
+    text-align: center;
+    border-top: 5px solid #b9b7b6;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.resume {
+    color: white;
+    
+}
+
+.resume .short_res {
+    display: none;
+}
+
+.linkedin span {
+     margin-right: 1rem;
+}
+
+.linkedin img {
+    max-height: 2rem;
+    width: auto;
+    vertical-align: middle;
+   
+}
+
+
+@media only screen and (max-width: 1050px) {
+    .linkedin span{
+        display: none;
+    }
+    .email span{
+        display: none;
+    }
+    .resume .full_res {
+        display: none;
+    }
+    .resume .short_res {
+        display: inline;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .linkedin span{
+        display: none;
+    }
+    .email span{
+        display: none;
+    }
+}
+/*
+
+footer p{
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+footer a{
+    margin-right: 8rem;;
+}
+
+footer span {
+    margin-right: 8rem;
+}
+
+footer img {
+    vertical-align: middle;
+
+
+}
+
+*/
+
+
