@@ -111,7 +111,7 @@ body {
     border: .5rem solid #db6363;
     background-color: #8b8b8b;
     width: 90%;
-    margin: 5%;
+
 }
 
 
@@ -130,12 +130,15 @@ body {
     color: white;
     font-weight: bold;
     max-width: 50%;
-    min-width: 500px;
+    min-width: 375px;
 }
 
 .summary h2 {
     font-size: 2rem;
     text-align: center;
+    max-width: 100%;
+
+    
 }
 
 .summary p {
@@ -266,6 +269,9 @@ footer {
     .email span{
         display: none;
     }
+    .menu {
+    font-size: 1rem;
+}
 }
 
 
