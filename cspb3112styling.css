@@ -2,21 +2,44 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    background-color: lightblue;
+    text-decoration: underline;
+}
 
 body {
     margin: 0 0;
     padding: 0;
     background-color: #EAEDED;
     display: grid;
-    grid-template-rows: auto 1fr 1fr 7fr auto;
+    grid-template-areas: "header"
+                        "intro"
+                        "proposal"
+                        "course_blog"
+                        "footer";
+    grid-template-rows: auto repeat 1fr 3fr 7fr auto;
     border: 1px solid black;
     background-image: url("Images/53949426179_1e3cd55d2b_o.png");
     background-size: contain;
     background-attachment: fixed;
-    /*min-height: 100vh;*/
 }
 
+
+.grid_box {
+    vertical-align: middle;
+    border: .5rem solid #db6363;
+    background-color: #8b8b8b;
+    margin: 5%;
+}
+
+
 .header {
+    grid-area: header;
     color: white;
     background-color: #db6363;
     text-align: center;
@@ -27,9 +50,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 1.3rem;
-    /*position: sticky;
-    top: 0;*/
-    grid-row: 1 / span 1;
+    border-bottom: 5px solid #b9b7b6;
     
 }
 
@@ -39,49 +60,51 @@ body {
 }
 
 #intro {
-    grid-row: 2 / span 1;
+    grid-area: intro;
+    color: white;
+    text-align: center;
 }
 
 #proposal {
-    grid-row: 3 / span 1;
+    grid-area: proposal;
+    color: white;
+}
+
+#proposal h3 {
+    font-size: 2rem;
+    padding-left: 2rem;
+    text-align: center;
+    border-bottom: 3px solid white;
+}
+
+#proposal p {
+    padding: 0 2rem 2rem 2rem;
 }
 #course_blog  {
+    grid-area: course_blog;
     margin: 10px;
     display: grid;
-    grid-template-columns: 1fr;
     border: 2px solid black;
     gap: 10px;
-    grid-row: 4 / span 1;
     overflow: scroll;
-    /*
-    display: flex;
-    flex-direction: column;
-    align-items: center;*/
 }
 
 #course_blog article {
     border: 2px solid black;
-    background-color: #b9b7b6;
+    background-color: #8b8b8b;
     color: white;
     border: .25rem solid #db6363;
+    margin: 0 5%;
 }
 
-
-
-footer {
-    /*position: fixed;
-    width: 100%;
-    bottom: 0px;*/
-    color: white;
-    background-color: #db6363;
-    font-family: "Fugaz One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.3rem;
+#course_blog h2 {
     text-align: center;
-    grid-row: 5 / span 1;
-    
 }
+
+.proposal_headers {
+    text-decoration: underline;
+}
+
 
 
 .menu {
@@ -92,7 +115,72 @@ footer {
     margin: 0;
 }
 
-.menu a {
-    text-decoration: none;
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: footer;
+    height: 12%;
+    min-height: 80px;
+    width: 100%;
+    bottom: 0px;
     color: white;
+    background-color: #db6363;
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1rem;
+    text-align: center;
+    border-top: 5px solid #b9b7b6;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.resume {
+    color: white;
+}
+
+.resume .short_res {
+    display: none;
+}
+
+.linkedin span {
+     margin-right: 1rem;
+}
+
+.linkedin img {
+    max-height: 2rem;
+    width: auto;
+    vertical-align: middle;
+}
+
+
+@media only screen and (max-width: 1050px) {
+    .linkedin span{
+        display: none;
+    }
+    .email span{
+        display: none;
+    }
+    .resume .full_res {
+        display: none;
+    }
+    .resume .short_res {
+        display: inline;
+    }
+    .prof_picture {
+        margin: 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .linkedin span{
+        display: none;
+    }
+    .email span{
+        display: none;
+    }
 }

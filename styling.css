@@ -4,11 +4,24 @@
 
 html {
     height: 100%;
+    width: 100%;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    background-color: lightblue;
+    text-decoration: underline;
+}
+
 
 body {
     min-height: 100%;
     height: 100%;
+    width: 100%;
     display: grid;
     grid-template-areas: "header header"
                          "intro intro"
@@ -25,8 +38,9 @@ body {
     padding: 0;
     background-color: #EAEDED;
     background-image: url("Images/53949426179_1e3cd55d2b_o.png");
-    background-size: contain;
+    background-size:cover;
     background-attachment: fixed;
+    overflow: scroll;
 
 }
 
@@ -56,14 +70,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    overflow: scroll;
+    /*overflow: scroll;*/
     margin: 0;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
+
 
 /* Row 2 */
 .intro {
@@ -74,13 +85,11 @@ a {
     justify-content: space-evenly;
     justify-items: center;
     align-items: center;
-    margin: 2%;
 }
 
 
 .prof_picture {
-    border: 1px solid black;
-    border-width: thick;
+    border: 5px solid white;
     flex-grow: 1;
     max-width: 30rem;
     height: auto;
@@ -88,28 +97,45 @@ a {
 }
 
 /*Container outline for each section on the page*/
+
 .grid_box {
     vertical-align: middle;
-    width: 75%;
-    min-width: 400px;
     border: .5rem solid #db6363;
-    background-color: #b9b7b6;
-    flex-grow: 1;
-    flex-basis: 350px;
+    background-color: #8b8b8b;
+    width: 90%;
+    margin: 5%;
 }
 
+.grid_box_career {
+    vertical-align: middle;
+    border: .5rem solid #db6363;
+    background-color: #8b8b8b;
+    width: 90%;
+    margin: 5%;
+}
+
+
+.grid_box_education {
+    vertical-align: middle;
+    border: .5rem solid #db6363;
+    background-color: #8b8b8b;
+    width: 90%;
+    margin: 0 5% 5% 5%;
+    
+}
 
 .summary {
     vertical-align: middle;
     align-self: center;
     color: white;
     font-weight: bold;
-    flex-grow: 1;
     max-width: 50%;
+    min-width: 500px;
 }
 
 .summary h2 {
     font-size: 2rem;
+    text-align: center;
 }
 
 .summary p {
@@ -121,29 +147,56 @@ a {
 
 
 /* Row 3 */
-.chistory {
+#chistory {
     grid-area: chistory;
     vertical-align: middle;
-    align-self: center;
-    justify-self: start;
     color: white;
     font-weight: bold;
 
+}
+
+#chistory div {
+    align-self: start;
 
 }
 
-.chistory p {
+#chistory h2 {
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 3px solid white;
     width: 100%;
 }
 
+#chistory p {
+    padding: 1rem;
+
+}
+
+
 /* Row 4 */
-.education {
+#education {
     grid-area: education;
     vertical-align: middle;
-    align-self: center;
-    justify-self: end;
     color: white;
     font-weight: bold;
+}
+
+#education div {
+    align-self: start;
+}
+
+#education h2 {
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 3px solid white;
+    width: 100%;
+}
+
+
+#education p {
+    padding: 1rem;
 }
 
 /* Row 5 */
@@ -166,12 +219,10 @@ footer {
     align-items: center;
     justify-items: center;
     justify-content: space-evenly;
-    
 }
 
 .resume {
     color: white;
-    
 }
 
 .resume .short_res {
@@ -186,7 +237,6 @@ footer {
     max-height: 2rem;
     width: auto;
     vertical-align: middle;
-   
 }
 
 
@@ -203,6 +253,9 @@ footer {
     .resume .short_res {
         display: inline;
     }
+    .prof_picture {
+        margin: 2rem;
+    }
 }
 
 
@@ -214,28 +267,5 @@ footer {
         display: none;
     }
 }
-/*
-
-footer p{
-    display: inline-block;
-    margin-right: 10px;
-
-}
-
-footer a{
-    margin-right: 8rem;;
-}
-
-footer span {
-    margin-right: 8rem;
-}
-
-footer img {
-    vertical-align: middle;
-
-
-}
-
-*/
 
 
