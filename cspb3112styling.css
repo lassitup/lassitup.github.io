@@ -95,16 +95,25 @@ body {
     color: white;
     border: .25rem solid #db6363;
     margin: 0 5%;
+    padding: 2%;
 }
 
 #course_blog h2 {
     text-align: center;
+    font-size: 2rem;
+    padding: 1%;
+    margin: 0;
+
 }
 
 .proposal_headers {
     text-decoration: underline;
 }
 
+.blog_subtitle {
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
 
 
 .menu {
@@ -173,6 +182,11 @@ footer {
     .prof_picture {
         margin: 2rem;
     }
+    .menu {
+    font-size: .65rem;
+    margin: .3rem;
+    }
+
 }
 
 
@@ -182,5 +196,8 @@ footer {
     }
     .email span{
         display: none;
+    }
+    .menu {
+        font-size: .55rem;
     }
 }
