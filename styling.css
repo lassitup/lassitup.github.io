@@ -27,10 +27,11 @@ body {
                          "intro intro"
                          "chistory chistory"
                          "education education"
+                         "projects projects"
                          "footer footer";
                         
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto repeat(3, 1fr) auto;
+    grid-template-rows: auto repeat(4, 1fr) auto;
     align-content: start;
     justify-content: space-around;
     justify-items: center;
@@ -41,7 +42,6 @@ body {
     background-size:cover;
     background-attachment: fixed;
     overflow: scroll;
-    gap: 1rem;;
 
 }
 
@@ -63,7 +63,7 @@ body {
 
 .header h1 {
     border-bottom: 2px solid white;
-    margin: 0;
+    padding: 2rem;
 }
 
 
@@ -72,7 +72,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     /*overflow: scroll;*/
-    margin: 0;
+    padding: 1rem;
 }
 
 
@@ -86,6 +86,7 @@ body {
     justify-content: space-evenly;
     justify-items: center;
     align-items: center;
+    margin: 2rem 0;
 }
 
 
@@ -103,8 +104,8 @@ body {
     vertical-align: middle;
     border: .5rem solid #db6363;
     background-color: #8b8b8b;
-    width: 90%;
-    margin: 5%;
+    width: 100%;
+    margin: 2% 0%;
 }
 
 .grid_box_career {
@@ -112,7 +113,7 @@ body {
     border: .5rem solid #db6363;
     background-color: #8b8b8b;
     width: 90%;
-
+    margin: 0 5% 2% 5%;
 }
 
 
@@ -121,8 +122,16 @@ body {
     border: .5rem solid #db6363;
     background-color: #8b8b8b;
     width: 90%;
-    margin: 0 5% 5% 5%;
-    
+    margin: 0 5% 2% 5%;
+}
+
+
+.grid_box_projects {
+    vertical-align: middle;
+    border: .5rem solid #db6363;
+    background-color: #8b8b8b;
+    width: 90%;
+    margin: 0 5% 2% 5%;
 }
 
 .summary {
@@ -156,25 +165,26 @@ body {
     vertical-align: middle;
     color: white;
     font-weight: bold;
-
 }
 
 #chistory div {
     align-self: start;
-
 }
 
 #chistory h2 {
+    position: sticky;
+    top: 0;
     padding: 1rem;
     font-size: 2rem;
     text-align: center;
     border-bottom: 3px solid white;
     width: 100%;
+    z-index: 1;
+    background-color: #8b8b8b;
 }
 
 #chistory p {
     padding: 1rem;
-
 }
 
 
@@ -191,11 +201,15 @@ body {
 }
 
 #education h2 {
+    position: sticky;
+    top: 0;
     padding: 1rem;
     font-size: 2rem;
     text-align: center;
     border-bottom: 3px solid white;
     width: 100%;
+    z-index: 1;
+    background-color: #8b8b8b;
 }
 
 
@@ -203,7 +217,53 @@ body {
     padding: 1rem;
 }
 
+
 /* Row 5 */
+#projects {
+    grid-area: projects;
+    vertical-align: middle;
+    color: white;
+    font-weight: bold;
+}
+
+
+#projects h2 {
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 3px solid white;
+    width: 100%;
+    z-index: 1;
+    background-color: #8b8b8b;
+}
+
+
+#projects article {
+    padding: 1rem;
+}
+
+.github_link {
+    display: flex;
+    justify-content: center;
+
+}
+
+#projects span {
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.github_logo {
+    height: auto;
+    min-width: 3rem;
+    align-self: center; 
+}
+
+
+
+/* Row 6 */
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -225,60 +285,68 @@ footer {
     justify-content: space-evenly;
 }
 
-.resume {
+footer p {
+    margin: 0;
+}
+
+.resume1 {
     color: white;
 }
 
-.resume .short_res {
+.resume2 {
     display: none;
+}
+
+
+.email span {
+    margin-right: 1rem;
 }
 
 .linkedin span {
      margin-right: 1rem;
 }
 
-.linkedin img {
-    max-height: 2rem;
-    width: auto;
-    vertical-align: middle;
+
+.linkedin_logo {
+    height: auto;
+    min-width: 2rem;
+    align-self: center; 
 }
 
 
 @media only screen and (max-width: 1050px) {
-    .linkedin span{
+    .linkedin span {
         display: none;
     }
     .email span{
         display: none;
     }
-    .resume .full_res {
+    .resume1 {
         display: none;
     }
-    .resume .short_res {
+    .resume2 {
         display: inline;
     }
     .prof_picture {
         margin: 2rem;
     }
     .summary {
-        max-width: 100%;;
+        max-width: 90%;
     }
-    .menu {
-    font-size: .65rem;
-    margin: .3rem;
+    .menu a{
+        font-size: 1rem;
+        margin: .3rem;
     }
+
 }
 
 
 @media only screen and (max-width: 480px) {
-    .linkedin span{
-        display: none;
-    }
     .email span{
         display: none;
     }
-    .menu {
-    font-size: .55rem;
+    .menu a{
+        font-size: .80rem;
     }
 }
 
