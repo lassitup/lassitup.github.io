@@ -63,7 +63,7 @@ body {
 
 .header h1 {
     border-bottom: 2px solid white;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 
@@ -71,8 +71,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /*overflow: scroll;*/
-    padding: 1rem;
+    padding: .5rem;
 }
 
 
@@ -306,15 +305,25 @@ footer p {
     margin-right: 1rem;
 }
 
+
+.linkedin {
+    display: flex;
+    align-items: center;
+}
+
 .linkedin span {
      margin-right: 1rem;
 }
 
+.linkedin a {
+    height: 32px;
+    align-self: center;
+}
 
 .linkedin_logo {
     height: auto;
-    min-width: 2rem;
-    align-self: center; 
+    min-width: 2rem; 
+
 }
 
 
