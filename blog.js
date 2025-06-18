@@ -7,14 +7,16 @@ function expandCollapseAll () {
     let allBoxes = document.getElementsByClassName('post');
     
     if(allBoxes[0].hidden){
-
+        
         for (post of allBoxes) {
             post.hidden = false;
+            post.parentNode.lastElementChild.innerHTML = 'Hide Post';
         }
     }
     else {
         for (post of allBoxes) {
             post.hidden = true;
+            post.parentNode.lastElementChild.innerHTML = 'Show Post';
         }
     }
 }
