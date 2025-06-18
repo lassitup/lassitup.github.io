@@ -45,6 +45,12 @@ body {
 
 }
 
+
+.sub_box_color {
+    background-color: #676463;
+}
+
+
 /* Row 1 */
 .header {
     grid-area: header;
