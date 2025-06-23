@@ -58,3 +58,30 @@ function hide_expand_post(event) {
 }
 
 assignListeners();
+
+
+// Expand / Collapse Proposal Box
+
+
+let proposalButton = document.getElementById('proposalButton');
+
+function hide_expand_proposal(event) {
+    
+    let post = event.target;
+    let paragraph = post.parentNode.querySelector('p');
+
+    if(paragraph.hidden)
+    {
+        paragraph.hidden = false;
+        post.innerHTML = 'Hide Proposal';
+    }
+    else
+    {
+        paragraph.hidden = true;
+        post.innerHTML = 'Show Proposal';
+    }
+
+}
+
+
+proposalButton.addEventListener('click', hide_expand_proposal);

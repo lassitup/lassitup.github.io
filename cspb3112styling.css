@@ -88,9 +88,15 @@ body {
     border-bottom: 3px solid white;
 }
 
-#proposal p {
-    padding: 0 2rem 2rem 2rem;
+
+
+#proposal article {
+    background-color: #8b8b8b;
+    color: white;
+    margin: 0 5%;
+    padding: 2%;
 }
+
 #course_blog  {
     grid-area: course_blog;
     margin: 10px;
