@@ -276,7 +276,7 @@
             
             <h2>Weekly Project Update Blog Posts</h2>
             <article id="week_2">
-                <h3>Week 2 Post (5/19/25 &ndash; 5/25/25)</h3>
+                <h3>Week 2 Post</h3>
                 <p class="post">
                     <span class="blog_subtitle">What did you do last week</span><br>
                     With last week being the first week of the course, I spent most of my time familiarizing myself with the
@@ -314,7 +314,7 @@
                 <button class="button">Hide Post</button>
             </article>
             <article>
-                <h3>Week 3 Post (5/26/25 &ndash; 6/1/25)</h3>
+                <h3>Week 3 Post</h3>
                 <p class="post">
 
                     <span class="blog_subtitle">What did you do last week</span><br>
@@ -344,7 +344,7 @@
 
             </article>
             <article>
-                <h3>Week 4 Post (6/2/25 &ndash; 6/8/25)</h3>
+                <h3>Week 4 Post</h3>
                 <p class="post">
                     <span class="blog_subtitle">What did you do last week</span><br>
                     Last week I worked primarily on my proposal and making sure that I had a good plan in place to get started. I also continued some of the course work on CSS on Codecademy and put it into practice my working on my personal website. I've gotten it to a good point now, where it's presentable (My Website), but it's going to be one of those things I continuously update as I go. Honestly, I've been using it as a playground for trying out the new things I'm learning, so it will only get better! <br><br>
@@ -399,7 +399,7 @@
                 <h3>Week 7 Post</h3>
                     <p class="post">
                     <span class="blog_subtitle">What did you do last week</span><br>
-                    Last week I started to get into the backend park of the web development world. I started off with in an introduction into node.js and some of the differences between it and the browser version of JavaScript. I spent some time learning about the built in modules in the Node.js environment such as 'event', 'fs', 'http' among others. I also learned about the node package manager and how to bring in external modules, with the big one being Express. Most of last week was really beginning to learn about Express. The lessons took me a little to get through, but I now how a good idea of how an express server works. I've spent time learning about routes, which basically directs the incoming request to the appropriate middleware to handle it. One of my accomplishments in the last week was getting my website and my express server to communicate. After figuring out I needed to use the 'FormData' interface to submit my impromptu order form data (on the browser side) and the multer package on the server side, I was able to see the see my data and send a response back. This was a moment of complete excitement for myself getting this to work. <br><br>
+                    Last week I started to get into the backend part of the web development world. I started off with in an introduction into node.js and some of the differences between it and the browser version of JavaScript. I spent some time learning about the built in modules in the Node.js environment such as 'event', 'fs', 'http' among others. I also learned about the node package manager and how to bring in external modules, with the big one being Express. Most of last week was really beginning to learn about Express. The lessons took me a little to get through, but I now how a good idea of how an express server works. I've spent time learning about routes, which basically directs the incoming request to the appropriate middleware to handle it. One of my accomplishments in the last week was getting my website and my express server to communicate. After figuring out I needed to use the 'FormData' interface to submit my impromptu order form data (on the browser side) and the multer package on the server side, I was able to see the see my data and send a response back. This was a moment of complete excitement for myself getting this to work. <br><br>
 
                     <span class="blog_subtitle">What are you planning on doing this week</span><br>
                     I'm still learning about express middleware this week, but after I finish these few lessons. I'm going to tackle SQL and SQLite. The last big piece I need to get it all working. I feel like once I get this under my belt, I'll be able to spend some more time actually building my site. So this is going to be my focus in the next week.<br><br>
@@ -414,12 +414,56 @@
             </article>
             <article>
                 <h3>Week 8 Post</h3>
+                    <p class="post">
+                    <span class="blog_subtitle">What did you do last week</span><br>
+                    This last week I spent a majority of my time learning more about express.js and learning SQL. (Another cert for the win!). In the first part of the week, I was finishing up a module over express where I learned about components of express such as Routers and Middleware stacks and then moved on to the final piece of SQL that I need to get my project to work as intended. The course I did made SQL seem pretty straight forward - I learned things like how to create tables, SELECT records, but then also how to perform operations on results with the aggregate functions like AVG, COUNT, GROUP BY, etc. The thing that gets me though is remembering the ordering of the statements. Again, these were the basics, I'd imagine it can get a lot more complicated...  <br><br>
+
+                    <span class="blog_subtitle">What are you planning on doing this week</span><br>
+                    This week, I'm working on connecting it all. I've been spending this week learning about the node package sqlite3 and using my new SQL skills within my JavaScript code to interact with my database. I'm still working on this module, but I got excited and went ahead and attempted submit some form data from my premature website to my express server and ultimately to my database. (See some screenshots below!) I was beyond excited to see that record in the database... For the rest of the week, I plan on finishing the lesson over the sqlite3 package and then, I want to explore how I can create a session for the user - as in the user doesn't need to sign in or anything, but can build out a cart and have the data retained as they navigate the site and then everything is submitted and added to the database once the order is complete. I've only done some light research so far on it, but there is an 'express-session' package for node.js. I'm not entirely sure though if this concept is something managed by the browser or the server (or both?). If anyone can shed some light on how one would do this, let me know! So this is something I'm going to look into more. But beside these items, I'm going to continue to build things out now that I have an basic understanding of how it all works. <br><br>
+
+                    <span class="blog_subtitle">Are there any impediments in your way?</span><br>
+                    Nothing major this week! Just continuing to push forward!<br><br>
+
+                    <span class="blog_subtitle">Reflection on progress and improvements</span><br>
+                    Last week was a little more challenging with the holiday weekend, but I still managed to get through things, albeit not as fluidly as normal. 
+                </p>
+                <button class="button">Hide Post</button>
             </article>
             <article>
                 <h3>Week 9 Post</h3>
+                    <p class="post">
+                    <span class="blog_subtitle">What did you do last week</span><br>
+                    This past week was a good week for my project - I spent the earlier part of the week finishing up learning about the SQLite3 package for node.js and learning how to use SQL and JavaScript together to add to and query my database. From there, I really wanted to make it so my site can retain customer data as they shop. So, if the customer adds something to the cart and then navigates to another page, but then navigates to their cart and will have all their previously added products populate the cart. A pretty simple idea, but I ultimately had to spend some time learning about sessions in express, where each user that goes to the site will be given a session id and is sent back and forth between the client and the server. I ended up having to use the 'express-session' package to initiate the session. I can say, however, that I successfully got this working and now the cart page is always up to date. This was one of my proudest moments this week!  <br><br>
+
+                    <span class="blog_subtitle">What are you planning on doing this week</span><br>
+                    Now that I've got my session feature working, this next week I'm really going to be focused on continuing to build out the rest of the site and continuing to add Routes to my express server where needed. I've gotten to the point where the cart is updated with current items and now I'm going to add the step where the customer provides personal details/ like contact and shipping information and ultimately I want to then get the actual orders submitted to the server/database. I'll need to figure out how I'm going to organize the tables in the database and then route the submissions as needed. So this is my main focus this next week. Once I have that working, I'm going to go back and add a few different product pages (I've been working with just 1 product type right now (bracelets) as a template for purchasing a product for (like below) but the others will be very, very similar with a few different inputs. Once I've got this, I'm going to then focus on making everything looking a little nicer in the extra time I have left in the semester. One other thing I need to learn more about / add into my site is security. This quickly turned into a wish list of things I want to get done, but this week's focus is getting a complete order submitted.<br><br>  
+                    One other thing I plan to do in this next week is to put together an updated resume for my CS career. Right now it's all accounting focused so I'm going to see if I can find some guidance on how to build out a resume for career switchers to help stress those transferrable skills  and the projects I've already completed. <br><br>
+
+                    <span class="blog_subtitle">Are there any impediments in your way?</span><br>
+                    Not really an impediment, but more just that I'm learning so many things in a short amount of time - trying to recall everything I went over while learning one of the languages. There's a lot of me referencing back to the documentation even sometimes for more basic things in JavaScript, but when I see it, i'm like, Ah yes! Now I remember! Luckily there are so many things to reference out there!<br><br>
+
+                    <span class="blog_subtitle">Reflection on progress and improvements</span><br>
+                    My process really has just been jump into working on the project whenever I can, I think for me personally, I need to pace myself and maybe take some designated breaks from it. It's hard to do that because I just want to keep going on it, but I feel myself slowing down and I think this is a factor there.  
+                </p>
+                <button class="button">Hide Post</button>
             </article>
             <article>
                 <h3>Week 10 Post</h3>
+                    <p class="post">
+                    <span class="blog_subtitle">What did you do last week</span><br>
+                    This week I stuck with my goal of getting an order fully submitted on my website. I spend a little time at the beginning of the week laying out my database tables and then establishing the tables within my SQLite database. One struggle I had as I was working on this part was that I had tables that built off of data form another, so my order table has records that are linked via a foreign key to the customer table's primary id and then the order detail table that contains the records for each product sold attached to the order is tied to the order table. Ensuring that my database write requests were performed sequentially so the newly created ID could be used in the subsequent write, I initially had the database writes nested within the callback functions of each write. It was disgusting, it worked, but disgusting. It was late when I did that and then came back to it the next day and thought, why not just make these separate middleware functions and call next when done - so I did that and now it actually looks nice. So mission accomplished there! Here are some pictures of some data submitted: <br><br>
+                    This was a major milestone for me - now that I understand how it all works, it's much easier to make changes like adding new fields/ tables. For now, i'm skipping the payment portion of the order submission - this is going to involved api calls to a service like stripe, but I'm very confident I can get that implemented once this site is actually ready to live on the web.  <br><br>
+
+                    <span class="blog_subtitle">What are you planning on doing this week</span><br>
+                    For this coming week, now that I've got it performing the critical function of submitting order data,  I'm really going to spend some time on "cleaning things up". As I've had to keep picking up this project and putting down when I have time, I quite honestly haven't been as organized as I ideally should have. Also, since I've been learning so much trying to just get things to work, the cleanliness got away from me. So first thing im targeting this week is going through deleting useless comments or code I don't need, going to organize my code base a little more to actually make it look, well, good like placing my middleware functions for my database operations in their own file and import in as needed, things like this. After this, I'm going to work on building out the other two product types i'm going to include - this shouldn't be too bad as the design is quite similar to the bracelet page I've got and the server routes I have should be able to be reused. Depending on how much I can get to this week, I REALLY want to start learning more about the security considerations I need to take on my site. <br><br>
+
+                    <span class="blog_subtitle">Are there any impediments in your way?</span><br>
+                    Nothing major this week - just a few family events that will take some time during the weekend, but no issue there.<br><br>
+
+                    <span class="blog_subtitle">Reflection on progress and improvements</span><br>
+                    I keep getting distracted with little things I want to add in as I go - for example, I have an api call that pulls the sales tax amount from api ninjas - but my submit button was able to submit the data before the api call returned which was causing an issue server side. I soon as I realized this, I got distracted and started on working on this instead of the bigger issue I was having with my database write sequence. I fixed it, but I think I need to start taking inventory of the smaller problems I encounter and come to them. Sometimes the little things are frustrating and I want to fix on the spot and it takes me away from my train of thought on the other things.  
+                </p>
+                <button class="button">Hide Post</button>
             </article>
             <article>
                 <h3>Week 11 Post</h3>
