@@ -10,6 +10,7 @@ a {
 a:hover {
     background-color: lightblue;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 body {
