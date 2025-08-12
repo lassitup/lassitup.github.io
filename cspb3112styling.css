@@ -73,6 +73,23 @@ body {
     text-align: center;
 }
 
+#intro h2 {
+    text-decoration: underline;
+}
+
+#introHeader{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+#requirements{
+    text-align: left;
+    margin: 50px;
+}
+
+#intro p span {
+    text-decoration: underline;
+}
 #proposal {
     grid-area: proposal;
     color: white;
@@ -152,9 +169,15 @@ body {
 
 
 #finalReport {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
+#walkthrough {
+    text-align: center;
+    width: 70%;
+    height: auto;
+}
 
 
 footer {
